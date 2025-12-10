@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>La Casa del Creeper</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content container">
+            <nav class="navigation">
+                <a href="/">
+                    <p class="logotipo">La Casa del <span>Creeper</span></p>
+                </a>
+                
+                <div class="btn-cart">
+                    <button type="button"><i class="fa-solid fa-cart-shopping icon-cart"></i></button>  
+                    <span id="cartCount">0</span>
+
+                    <div class="cart">
+                        <div class="cart-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Productos</th>
+                                        <th>Descripción</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Deshacer</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="contentProducts">
+                               
+                                </tbody>
+                    
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="5" class="total">
+                                            <h4 class="heading-total">Total: <span id="total"></span></h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5">
+                                            <button type="button" id="emptyCart">Empty Cart</button>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+                </div> 
+
+                
+
+            </nav>
+        </div>
+
+        <form class="form-header">
+            <input type="search" name="search" placeholder="Search...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass icon-glass"></i></button>
+        </form>
+    </header>
+
+    <section class="banner">
+        <div class="banner-grid container">
+            <div class="banner-item">
+                <i class="fa-regular fa-lightbulb icon-banner"></i>
+                <h3>¡Somos la mejor tienda online de Minecraft!</h3>
+            </div>
+            <div class="banner-item">
+                <i class="fa-solid fa-bullseye icon-banner"></i>
+                <h3>¡Productos de buena calidad, a buen precio!</h3>
+            </div>
+            <div class="banner-item">
+                <i class="fa-regular fa-clock icon-banner"></i>
+                <h3>¡Envios a cualquier parte del pais!</h3>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="products" id="listProducts">
+            <h2>Productos</h2>
+            <div class="products-grid container">
+                <div class="product">
+                    <img src="/assets/img/products/product-01.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Peluche de Creeper de Minecraft</h4>
+                        <p class="product-text">El icónico y explosivo Creeper de Minecraft ha cobrado vida en forma de un 
+                            adorable y suave peluche. Este compañero verde, con su característica forma cuadrada y expresión 
+                            facial pixelada, es el artículo perfecto para cualquier fan del juego.</p>
+                        
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+
+                        <div class="price">
+                            <span>S/59.00</span>
+                            <p id="currentPrice">S/39.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="1">Añadir al carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-02.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Peluche de Steve de Minecraft</h4>
+                        <p class="product-text">¡Presentamos a Steve, el héroe minero de Minecraft, listo para unirse a tu 
+                            mundo real! Este adorable peluche captura la esencia del skin original con su diseño de bloques 
+                            y su característica ropa azul. Es el compañero perfecto para tus aventuras dentro y fuera del juego.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>S/59.00</span>
+                            <p id="currentPrice">S/39.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="2">Añadir al carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-03.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Peluche de Alex, la Aventurera de Minecraft</h4>
+                        <p class="product-text">¡Es hora de minar con Alex! Este adorable peluche trae a la valiente exploradora de 
+                            Minecraft a la vida, con su inconfundible cabello naranja trenzado y su camisa verde. Es el complemento 
+                            perfecto para Steve y cualquier colección de fans.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>S/59.00</span>
+                            <p id="currentPrice">S/39.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="3">Añadir al carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-04.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Peluche de Zombi de Minecraft</h4>
+                        <p class="product-text">¡Cuidado con la noche! Este peluche captura al temido Zombi de Minecraft, el mob hostil 
+                            que no puede faltar en tu colección. Con su característica piel verde, ojos oscuros y ropa de aventurero, 
+                            ¡es extrañamente adorable!</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>S/59.00</span>
+                            <p id="currentPrice">S/39.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="4">Añadir al carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-05.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Espada de Netherite de Minecraft</h4>
+                        <p class="product-text">¡Conviértete en el guerrero definitivo de Minecraft! Esta réplica de la Espada de Netherite 
+                            Encantada te permite llevar el poder del juego a la vida real. Con su distintivo color púrpura de encantamiento y 
+                            diseño pixelado, es el accesorio perfecto para el juego de rol y la exhibición.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>S/299.00</span>
+                            <p id="currentPrice">S/199.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="5">Añadir al carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-06.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Pico de Diamante de Minecraft</h4>
+                        <p class="product-text">¡Es hora de minar! Con esta réplica a escala del Pico de Diamante de Minecraft, 
+                            podrás excavar, construir y explorar en el mundo real como en Minecraft. Su diseño de bloques y su vibrante color azul lo 
+                            hacen reconocible al instante para cualquier fan.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>S/299.00</span>
+                            <p id="currentPrice">S/249.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="6">Añadir al carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-07.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Taza de Cerámica Creeper de Minecraft (473ml)</h4>
+                        <p class="product-text">¡Empieza el día con una explosión... de cafeína! Esta llamativa taza de cerámica está decorada con la 
+                            cara icónica y pixelada del Creeper de Minecraft sobre un fondo verde brillante. Es perfecta para tu café, té o cualquier 
+                            bebida que te ayude a mantenerte despierto para tu próxima sesión de minería.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>S/49.00</span>
+                            <p id="currentPrice">S/29.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="7">Añadir al carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-08.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Set Escolar de 5 Piezas de Minecraft</h4>
+                        <p class="product-text">¡Lleva tus aventuras de Minecraft al aula con este completo set escolar! Este paquete de 5 piezas tiene 
+                            todo lo que un gamer necesita para el regreso a clases, decorado con los personajes más queridos y temidos del juego, como el 
+                            Creeper, Steve y los Zombis.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>S/89.00</span>
+                            <p id="currentPrice">S/59.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="8">Añadir al carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-09.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Set de 8 Mini Figuras de Colección de Minecraft</h4>
+                        <p class="product-text">¡Colecciona a tus héroes, mobs y animales favoritos con este set de 8 mini figuras de Minecraft! Este 
+                            paquete esencial es perfecto para recrear tus escenas favoritas del juego o para exhibir en tu escritorio o estantería gamer.</p>
+                
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                
+                        <div class="price">
+                            <span>S/34.00</span>
+                            <p id="currentPrice">S/19.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="9">Añadir al carrito</button>
+                    </div>
+                </div><!--.product-->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;2025 La Casa del Creeper. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="/assets/plugins/fontawesome/js/all.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+    
+</body>
+</html>
